@@ -1,4 +1,4 @@
-package com.cxmax.library;
+package com.cxmax.library.lifecycle;
 
 import com.cxmax.library.util.Util;
 

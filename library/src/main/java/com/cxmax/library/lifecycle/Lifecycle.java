@@ -1,4 +1,4 @@
-package com.cxmax.library;
+package com.cxmax.library.lifecycle;
 
 /**
  * @Author CaiXi on  2016/12/15 00:47.
