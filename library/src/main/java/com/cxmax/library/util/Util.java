@@ -28,6 +28,10 @@ public final class Util {
         return result;
     }
 
+    public static boolean isEmpty(Collection it){
+        return it == null || it.isEmpty();
+    }
+
     /**
      * Returns {@code true} if called on the main thread, {@code false} otherwise.
      */
