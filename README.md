@@ -1,4 +1,5 @@
-# LifeCycler
+# LifeCycler<br>
+###这里还是有点问题，暂时还没想好怎么来写优雅点，先继续试验下吧
 ##简介：<br>
 作为任意一个持有context的链式回调的代码，特别是包含异步请求，无可避免的会对activity or fragment 持有。造成不必要的潜在内存泄露的代码。因此我想做的事是：在任意链式回调bind这个lifecycle的library，在特定的生命周期例如：destroy，pause做暂停或者终止请求的操作。类似Rxlifecycle，compose(this.bindUntilEvent(ActivityEvent.PAUSE)) 的调用。<br>
 
