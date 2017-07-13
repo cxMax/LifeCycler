@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\e34cbd014fe138997cf7b0f2a59031d1f67445eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aad798874f8b8745ce30b5bd44ea81d78a200f37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\e34cbd014fe138997cf7b0f2a59031d1f67445eb\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_55cdbe444f96ce1f919a4d305c4f3e0bde63673e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\34a14b40dae8fd6598a692433e545f155797c86d\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_5545d293a8bc197af95600fb16e586afe1da3f65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android_code\demo\LifeCycler\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7e91f5bc1434d6ab1b02830e75dd54a0a16b90b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\ce538378dd0372451772dac13aad955186ab8b8f\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0aea3ee2e98509e426010963f9885a4195c1a8a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\ce538378dd0372451772dac13aad955186ab8b8f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d435d6e8f13d1e38af7e1aabc5b0eaf14105f5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\3a2c4ca14b0b1a4c03b9fe5c1322fed54587f7c2\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_aadba9c2554b8162b3fb59e19c9c21d7878c7dec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android_code\demo\LifeCycler\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="77f9cb2dcda8b0df7ed89a4486fe202b14ef7c48">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bf0fb35a2a7f2e95e212189eed4364fef956f440\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android_sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_31ad0bd727d6d422ed2ea39791210d2653001caa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\0aed07a7ec9deb8f20cf5fc0709cdc3d02931883\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dfcdbd9fc605b9e55a6f3f8b91c8ddcdf784eeb2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\3a2c4ca14b0b1a4c03b9fe5c1322fed54587f7c2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80537153999a38d8415559771e098916394f88c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\6be0b3cf30a596e0dc5c3de351e75f826a0022e0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_244978152efa2b12981a915692eb3ccd211288a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\98f88b517fa026d23c031d55508f4c817f13acf3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c27725359c40153cb2214980b025bd5a9c698859\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\f10aeb7d5d35dcb8aa4af8a9701663615a50e931\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75e02b0c107e661d8413f1a390cd42c1e2f10fe1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\5dd2d6f002d324464d916c127627a4aa18a63fad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f92de225da39b16b77f69b3ef50e4e9a119b388c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\6be0b3cf30a596e0dc5c3de351e75f826a0022e0\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_5733265a818dc3d0bdffe7cb1dcdd85731fff22e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\34a14b40dae8fd6598a692433e545f155797c86d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\android_code\demo\LifeCycler\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8b84dd088b7484741fc61a1085813e53a80bdfed\classes.dex" />
+    </item>
+
+</items>
