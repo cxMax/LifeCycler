@@ -1,11 +1,12 @@
 package com.cxmax.lifecycler;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.cxmax.library.LifeCycler;
-import com.cxmax.library.func.Func1;
+import com.cxmax.library.functions.Consumer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void lifeCycleUsage() {
-        new LifeCycler().with(this)
-                .addOnActivityDestroyedListener(new Func1() {
+        LifeCycler.with(this)
+                .addOnActivityResumedListener(new Consumer() {
                     @Override
-                    public void run(Activity activity) {
-                        //do what you want to do in this period
+                    public void run(Activity activity, Bundle bundle) {
+                        Toast.makeText(MainActivity.this , "hahahha" , Toast.LENGTH_LONG).show();
                     }
                 });
     }
