@@ -1,7 +1,7 @@
 # LifeCycler
 > current version : 2.0  
 
-##介绍 :  
+## 介绍 :  
 在任何一个类,只需要你传入当前的context(activity/fragment),就能通过LifeCycler去监听对应context的生命周期,然后具体在特定的生命周期做一些处理(类似onDestroy的时候释放资源).
 
 ##为什么要使用LifeCycler :
@@ -12,7 +12,7 @@
 常规思路是,制造一个一个callback向下传递,并在最终的operational class做对应的释放处理操作.  
 但如果是使用LifeCycler的话,只需要在具体的操作类注册并监听onDestroy()在执行具体操作即可.
 
-##用法：
+## 用法：
 ```
         LifeCycler.with(this)
                 .addOnActivityCreatedListener(new Consumer() {
