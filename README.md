@@ -4,7 +4,7 @@
 ## 介绍 :  
 在任何一个类,只需要你传入当前的context(activity/fragment),就能通过LifeCycler去监听对应context的生命周期,然后具体在特定的生命周期做一些处理(类似onDestroy的时候释放资源).
 
-##为什么要使用LifeCycler :
+## 为什么要使用LifeCycler :
 <b>设想一个场景</b> :  
 一个列表页面其中一个item的一个自定义View需要在activity onDestroy()的时候释放资源 ,   
 在代码里面的体现是activity/fragment -> adapter -> viewholder -> viewholder's operational class.  
