@@ -1,5 +1,7 @@
 package com.cxmax.library;
 
+import android.app.Activity;
+
 import com.cxmax.library.functions.Consumer;
 
 /**
@@ -16,31 +18,31 @@ public interface ILifeCycler {
 
     void unregisterActivityLifecycleCallbacks();
 
-    void addOnActivityCreatedListener(Consumer consumer);
+    ILifeCycler addOnActivityCreatedListener(Consumer consumer);
 
-    void addOnActivitySaveInstanceStateListener(Consumer consumer);
+    ILifeCycler addOnActivitySaveInstanceStateListener(Consumer consumer);
 
-    void addOnActivityResumedListener(Consumer consumer);
+    ILifeCycler addOnActivityResumedListener(Consumer consumer);
 
-    void addOnActivityStartedListener(Consumer consumer);
+    ILifeCycler addOnActivityStartedListener(Consumer consumer);
 
-    void addOnActivityPausedListener(Consumer consumer);
+    ILifeCycler addOnActivityPausedListener(Consumer consumer);
 
-    void addOnActivityStoppedListener(Consumer consumer);
+    ILifeCycler addOnActivityStoppedListener(Consumer consumer);
 
-    void addOnActivityDestroyedListener(Consumer consumer);
+    ILifeCycler addOnActivityDestroyedListener(Consumer consumer);
 
-    void removeOnActivityCreatedListener(Consumer consumer);
+    ILifeCycler removeOnActivityCreatedListener(Activity activity);
 
-    void removeOnActivitySaveInstanceStateListener(Consumer consumer);
+    ILifeCycler removeOnActivitySaveInstanceStateListener(Activity activity);
 
-    void removeOnActivityResumedListener(Consumer consumer);
+    ILifeCycler removeOnActivityResumedListener(Activity activity);
 
-    void removeOnActivityStartedListener(Consumer consumer);
+    ILifeCycler removeOnActivityStartedListener(Activity activity);
 
-    void removeOnActivityPausedListener(Consumer consumer);
+    ILifeCycler removeOnActivityPausedListener(Activity activity);
 
-    void removeOnActivityStoppedListener(Consumer consumer);
+    ILifeCycler removeOnActivityStoppedListener(Activity activity);
 
-    void removeOnActivityDestroyedListener(Consumer consumer);
+    ILifeCycler removeOnActivityDestroyedListener(Activity activity);
 }

@@ -27,4 +27,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
     compile project(':library')
+    testCompile "org.mockito:mockito-core:2.7.22"
+    testCompile "org.robolectric:robolectric:3.3.2"
+    testCompile "org.robolectric:robolectric-annotations:3.3.2"
+    //robolectric针对support-v4的shadows
+    testCompile "org.robolectric:shadows-support-v4:3.1.4"
 }

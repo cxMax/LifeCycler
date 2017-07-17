@@ -82,83 +82,97 @@ public class LifeCyclerImpl implements ILifeCycler{
 
 
     @Override
-    public void addOnActivityCreatedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityCreatedListener(Consumer consumer) {
         onActivityCreated.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivitySaveInstanceStateListener(Consumer consumer) {
+    public ILifeCycler addOnActivitySaveInstanceStateListener(Consumer consumer) {
         onActivitySaveInstanceState.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivityResumedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityResumedListener(Consumer consumer) {
         onActivityResumed.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivityStartedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityStartedListener(Consumer consumer) {
         onActivityStarted.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivityPausedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityPausedListener(Consumer consumer) {
         onActivityPaused.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivityStoppedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityStoppedListener(Consumer consumer) {
         onActivityStopped.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void addOnActivityDestroyedListener(Consumer consumer) {
+    public ILifeCycler addOnActivityDestroyedListener(Consumer consumer) {
         onActivityDestroyed.put(activity.hashCode(), consumer);
+        return this;
     }
 
     @Override
-    public void removeOnActivityCreatedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityCreatedListener(Activity activity) {
         onActivityCreated.remove(activity.hashCode());
+        return this;
     }
 
     @Override
-    public void removeOnActivitySaveInstanceStateListener(Consumer consumer) {
+    public ILifeCycler removeOnActivitySaveInstanceStateListener(Activity activity) {
         onActivitySaveInstanceState.remove(activity.hashCode());
+        return this;
     }
 
     @Override
-    public void removeOnActivityResumedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityResumedListener(Activity activity) {
         onActivityResumed.remove(activity.hashCode());
+        return this;
     }
 
     @Override
-    public void removeOnActivityStartedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityStartedListener(Activity activity) {
         onActivityStarted.remove(activity.hashCode());
+        return this;
     }
 
     @Override
-    public void removeOnActivityPausedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityPausedListener(Activity activity) {
         onActivityPaused.remove(activity.hashCode());
+        return this;
     }
 
     @Override
-    public void removeOnActivityStoppedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityStoppedListener(Activity activity) {
         onActivityStopped.remove(activity.hashCode());
+        return this;
 
     }
 
     @Override
-    public void removeOnActivityDestroyedListener(Consumer consumer) {
+    public ILifeCycler removeOnActivityDestroyedListener(Activity activity) {
         onActivityDestroyed.remove(activity.hashCode());
+        return this;
     }
 
-    private void handleLifeCycleEvent(SparseArray<Consumer> lifecycles, Activity activity, Bundle bundle){
+    private void handleLifeCycleEvent(SparseArray<Consumer> lifecycles, Activity activity, Bundle bundle) {
         if (lifecycles.size() <= 0 || activity == null) {
             return;
         }
         Consumer consumer = lifecycles.get(activity.hashCode());
         if (consumer != null) {
-            consumer.run(activity , bundle);
+            consumer.run(activity, bundle);
         }
     }
 }
