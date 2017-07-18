@@ -1,6 +1,7 @@
 package com.cxmax.library;
 
 import android.app.Activity;
+import android.app.Application;
 
 import com.cxmax.library.functions.Consumer;
 
@@ -14,9 +15,22 @@ import com.cxmax.library.functions.Consumer;
 
 public interface ILifeCycler {
 
+    /**
+     * you needn't register manually, it will register automatically
+     * @see LifeCyclerImpl Construct
+     */
     void registerActivityLifecycleCallbacks();
 
+    /**
+     * unregister {@link Application.ActivityLifecycleCallbacks}
+     * and {@link LifeCycler} can not monitor all Activities' lifecycle event in current application
+     */
     void unregisterActivityLifecycleCallbacks();
+
+    /**
+     * clear all activity call back listeners
+     */
+    void clear();
 
     ILifeCycler addOnActivityCreatedListener(Consumer consumer);
 

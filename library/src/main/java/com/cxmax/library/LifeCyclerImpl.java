@@ -36,50 +36,71 @@ public class LifeCyclerImpl implements ILifeCycler{
     @NonNull private Application.ActivityLifecycleCallbacks lifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
         @Override
         public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-            handleLifeCycleEvent(onActivityCreated , activity , savedInstanceState);
+            handleLifeCycleEventThenRemoveIt(onActivityCreated , activity , savedInstanceState);
         }
 
         @Override
         public void onActivityStarted(Activity activity) {
-            handleLifeCycleEvent(onActivityStarted , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivityStarted , activity , null);
         }
 
         @Override
         public void onActivityResumed(Activity activity) {
-            handleLifeCycleEvent(onActivityResumed , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivityResumed , activity , null);
         }
 
         @Override
         public void onActivityPaused(Activity activity) {
-            handleLifeCycleEvent(onActivityPaused , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivityPaused , activity , null);
         }
 
         @Override
         public void onActivityStopped(Activity activity) {
-            handleLifeCycleEvent(onActivityStopped , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivityStopped , activity , null);
         }
 
         @Override
         public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-            handleLifeCycleEvent(onActivitySaveInstanceState , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivitySaveInstanceState , activity , null);
         }
 
         @Override
         public void onActivityDestroyed(Activity activity) {
-            handleLifeCycleEvent(onActivityDestroyed , activity , null);
+            handleLifeCycleEventThenRemoveIt(onActivityDestroyed , activity , null);
         }
     };
 
+    /**
+     * you needn't register manually, it will register automatically
+     * @see LifeCyclerImpl Construct
+     */
     @Override
     public void registerActivityLifecycleCallbacks() {
         activity.getApplication().registerActivityLifecycleCallbacks(lifecycleCallbacks);
     }
 
+    /**
+     * unregister {@link Application.ActivityLifecycleCallbacks}
+     * and {@link LifeCycler} can not monitor all Activities' lifecycle event in current application
+     */
     @Override
     public void unregisterActivityLifecycleCallbacks() {
         activity.getApplication().unregisterActivityLifecycleCallbacks(lifecycleCallbacks);
     }
 
+    /**
+     * clear all activity call back listeners
+     */
+    @Override
+    public void clear() {
+        onActivityCreated.clear();
+        onActivitySaveInstanceState.clear();
+        onActivityStarted.clear();
+        onActivityResumed.clear();
+        onActivityPaused.clear();
+        onActivityStopped.clear();
+        onActivityDestroyed.clear();
+    }
 
     @Override
     public ILifeCycler addOnActivityCreatedListener(Consumer consumer) {
@@ -166,13 +187,14 @@ public class LifeCyclerImpl implements ILifeCycler{
         return this;
     }
 
-    private void handleLifeCycleEvent(SparseArray<Consumer> lifecycles, Activity activity, Bundle bundle) {
-        if (lifecycles.size() <= 0 || activity == null) {
+    private void handleLifeCycleEventThenRemoveIt(SparseArray<Consumer> lifecycles, Activity activity, Bundle bundle) {
+        if (activity == null || lifecycles == null || lifecycles.size() <= 0) {
             return;
         }
         Consumer consumer = lifecycles.get(activity.hashCode());
         if (consumer != null) {
             consumer.run(activity, bundle);
+            lifecycles.remove(activity.hashCode());
         }
     }
 }
