@@ -6,10 +6,8 @@ import android.app.Fragment;
 import android.support.annotation.NonNull;
 
 /**
- * @describe :
- * @usage :
- * <p>
- * </p>
+ * describe :
+ * usage :
  * Created by caixi on 17-7-13.
  */
 

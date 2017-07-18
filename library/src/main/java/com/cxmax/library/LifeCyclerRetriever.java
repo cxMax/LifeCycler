@@ -9,10 +9,8 @@ import android.util.SparseArray;
 import com.cxmax.library.utils.Asserts;
 
 /**
- * @describe :
- * @usage :
- * <p>
- * </p>
+ * describe :
+ * usage :
  * Created by caixi on 17-7-13.
  */
 

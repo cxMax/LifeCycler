@@ -4,10 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * @describe :
- * @usage :
- * <p>
- * </p>
+ * describe :
+ * usage :
  * Created by caixi on 17-7-13.
  */
 
