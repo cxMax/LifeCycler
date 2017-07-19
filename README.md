@@ -1,5 +1,8 @@
 # LifeCycler
-> current version : 2.0  
+> current version : 1.0  
+```
+compile 'com.cxmax.lifecycler:library:1.0'
+```
 
 ## 介绍 :  
 在任何一个类,只需要你传入当前的context(activity/fragment),就能通过LifeCycler去监听对应context的生命周期,然后具体在特定的生命周期做一些处理(类似onDestroy的时候释放资源).
@@ -48,7 +51,8 @@ http://www.jianshu.com/p/1b3f829810a1
 
 > 如果你没空看以上博客的话,可以直接看结论.   
 1.fragment的生命周期是通过activity的生命周期函数(例如:onCreate(),onPause())进行分发的   
-2.想要触发具体的activity的生命周期函数事件, 需要在application注册Application.ActivityLifecycleCallbacks,Application.ActivityLifecycleCallbacks会通过回调函数去分发已注册activity的生命周期事件
+2.想要触发具体的activity的生命周期函数事件, 需要在application注册Application.ActivityLifecycleCallbacks,  
+Application.ActivityLifecycleCallbacks会通过回调函数去分发已注册activity的生命周期事件
 
 ## 感谢 :
 1. [glide](https://github.com/bumptech/glide)
