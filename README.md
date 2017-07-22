@@ -57,7 +57,7 @@ Application.ActivityLifecycleCallbacks会通过回调函数去分发已注册act
 ## 感谢 :
 1. [glide](https://github.com/bumptech/glide)
 2. android open source project
-3. [Jween](https://github.com/Jween)
+3. [Jween's LifeCycler](https://github.com/Jween) 
 
 ## License
    Copyright (C) 2017 cxMax  
