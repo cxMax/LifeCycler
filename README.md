@@ -6,6 +6,7 @@ compile 'com.cxmax.lifecycler:library:1.0'
 
 ## 介绍 :  
 在任何一个类,只需要你传入当前的context(activity/fragment),就能通过LifeCycler去监听对应context的生命周期,然后具体在特定的生命周期做一些处理(类似onDestroy的时候释放资源).
+> todo 现在仅支持在主线程注册,以及回调为主线程, 后面我会完善支持多线程注册与回调.
 
 ## 为什么要使用LifeCycler :
 <b>设想一个场景</b> :  
