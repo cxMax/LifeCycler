@@ -12,26 +12,34 @@ import java.util.Map;
  */
 
 public class Asserts {
-    public static <T> T requireNonNull(T o, String message) {
+
+    public static <T> T requireNonNull(T object) {
+        return requireNonNull(object, " sth was null in : " + Asserts.class.getName());
+    }
+
+    public static <T> boolean isEmpty(T t) {
+        if (t instanceof Map) {
+            return ((Map) t).isEmpty();
+        } else if (t instanceof Collection) {
+            return ((Collection) t).isEmpty();
+        }
+        return isNullable(t);
+    }
+
+    public static boolean isOnMainThread() {
+        return Looper.myLooper() == Looper.getMainLooper();
+    }
+
+    private static boolean isNullable(Object o) {
+        return o == null;
+    }
+
+    private static <T> T requireNonNull(T o, String message) {
         if (o == null) {
             throw new NullPointerException(message);
         }
         return o;
     }
 
-    public static <T> T requireNonNull(T object) {
-        return requireNonNull(object, " sth was null in : " + Asserts.class.getName());
-    }
 
-    public static boolean isEmpty(Collection it) {
-        return it == null || it.isEmpty();
-    }
-
-    public static boolean isEmpty(Map it) {
-        return it == null || it.isEmpty();
-    }
-
-    public static boolean isOnMainThread() {
-        return Looper.myLooper() == Looper.getMainLooper();
-    }
 }
