@@ -185,14 +185,14 @@ public class LifeCyclerImpl implements ILifeCycler{
         return this;
     }
 
-    private void handleLifeCycleEventThenRemoveIt(SparseArray<Consumer> lifecycles, Activity activity, Bundle bundle) {
-        if (activity == null || lifecycles == null || lifecycles.size() <= 0) {
+    private void handleLifeCycleEventThenRemoveIt(SparseArray<Consumer> lifeCycles, Activity activity, Bundle bundle) {
+        if (activity == null || lifeCycles == null || lifeCycles.size() <= 0) {
             return;
         }
-        Consumer consumer = lifecycles.get(activity.hashCode());
+        Consumer consumer = lifeCycles.get(activity.hashCode());
         if (consumer != null) {
             consumer.run(activity, bundle);
-            lifecycles.remove(activity.hashCode());
+            lifeCycles.remove(activity.hashCode());
         }
     }
 }
