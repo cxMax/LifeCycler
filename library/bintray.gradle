@@ -1,7 +1,7 @@
 apply plugin: 'com.jfrog.bintray'
 
 group = 'com.cxmax.lifecycler'
-version = '1.0'
+version = '1.0.1'
 
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -35,9 +35,9 @@ bintray {
         name = 'com.cxmax.lifecycler'
 
         version {
-            name = '1.0'
+            name = '1.0.1'
             desc = "a library to hooks activity's or fragment's life cycle event."
-            vcsTag = '1.0'
+            vcsTag = '1.0.1'
         }
 
         licenses = ['Apache-2.0']
