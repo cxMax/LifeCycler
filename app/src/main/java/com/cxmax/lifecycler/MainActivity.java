@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 .addOnActivityResumedListener(new Consumer() {
                     @Override
                     public void run(Activity activity, Bundle bundle) {
-                        Toast.makeText(MainActivity.this , "hahahha" , Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this , "dialog shown in onResume()" , Toast.LENGTH_LONG).show();
                     }
                 })
                 .addOnActivityDestroyedListener(new Consumer() {
