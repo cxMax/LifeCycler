@@ -1,7 +1,7 @@
 # LifeCycler
 > current version : 1.0.1  
 
-## Introduction :  
+## Introduction :  [中文介绍](https://github.com/cxMax/LifeCycler/blob/master/doc/README_CN.md)
 LifeCycler can help user to hook activity or fragment lifecycle event in anywhere of your codes.
 
 ## Compile
