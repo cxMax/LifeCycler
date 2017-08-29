@@ -3,6 +3,7 @@ package com.cxmax.library;
 import android.app.Activity;
 import android.app.Application;
 import android.support.annotation.NonNull;
+import android.util.SparseArray;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -14,10 +15,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 class LifeCyclerRetriever {
 
-    private static volatile ConcurrentHashMap<Integer , ILifeCycler> sAppIndex;
+    private static SparseArray<ILifeCycler> sAppIndex;
 
     static {
-        sAppIndex = new ConcurrentHashMap<>();
+        sAppIndex = new SparseArray<>();
     }
 
     private static class SingletonHolder {
@@ -32,7 +33,7 @@ class LifeCyclerRetriever {
         return getLifeCyclerByApplication(activity);
     }
 
-    private synchronized ILifeCycler getLifeCyclerByApplication(@NonNull Activity activity) {
+    private ILifeCycler getLifeCyclerByApplication(@NonNull Activity activity) {
         Application application = activity.getApplication();
         ILifeCycler instance = findLifeCyclerByApplication(application);
         if (instance == null) {
@@ -42,7 +43,7 @@ class LifeCyclerRetriever {
         return instance;
     }
 
-    private static synchronized ILifeCycler findLifeCyclerByApplication(@NonNull Application app){
+    private static ILifeCycler findLifeCyclerByApplication(@NonNull Application app){
         return sAppIndex.get(app.hashCode());
     }
 
